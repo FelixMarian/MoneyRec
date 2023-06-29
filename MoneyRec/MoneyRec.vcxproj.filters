@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\InsertingData">
+      <UniqueIdentifier>{7e96e05d-d244-44c4-b8cc-4b844c816fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AuxiliarFunctions">
+      <UniqueIdentifier>{c123bc0b-a8a0-4093-ad21-461e06fea1e0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Insertions.h">
@@ -23,14 +29,26 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InsertExpenses.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CreateExcelFile.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\InsertingData</Filter>
+    </ClCompile>
+    <ClCompile Include="Validations.c">
+      <Filter>Source Files\InsertingData</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpensesList.c">
+      <Filter>Source Files\InsertingData</Filter>
+    </ClCompile>
+    <ClCompile Include="IncomesList.c">
+      <Filter>Source Files\InsertingData</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertExpenses.c">
+      <Filter>Source Files\InsertingData</Filter>
     </ClCompile>
     <ClCompile Include="FormatDate.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\AuxiliarFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="CountingEnters.c">
+      <Filter>Source Files\AuxiliarFunctions</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
