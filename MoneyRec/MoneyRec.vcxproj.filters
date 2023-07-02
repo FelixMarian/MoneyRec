@@ -19,6 +19,9 @@
     <Filter Include="Source Files\AuxiliarFunctions">
       <UniqueIdentifier>{c123bc0b-a8a0-4093-ad21-461e06fea1e0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GenerateRaport">
+      <UniqueIdentifier>{6727bc80-e96b-4009-a431-ffa049b501e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Insertions.h">
@@ -30,9 +33,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CreateExcelFile.c">
-      <Filter>Source Files\InsertingData</Filter>
-    </ClCompile>
-    <ClCompile Include="Validations.c">
       <Filter>Source Files\InsertingData</Filter>
     </ClCompile>
     <ClCompile Include="ExpensesList.c">
@@ -49,6 +49,15 @@
     </ClCompile>
     <ClCompile Include="CountingEnters.c">
       <Filter>Source Files\AuxiliarFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="GenerateRaport.c">
+      <Filter>Source Files\GenerateRaport</Filter>
+    </ClCompile>
+    <ClCompile Include="Validations.c">
+      <Filter>Source Files\AuxiliarFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="AdjustDate.c">
+      <Filter>Source Files\GenerateRaport</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

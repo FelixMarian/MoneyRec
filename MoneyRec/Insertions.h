@@ -19,3 +19,9 @@ int chooseTheIncome(int opt);
 int Counting();
 
 void GenerateRaport(days);
+
+int howManyDaysUWant(int days);
+
+
+int getDate(int Days);
+int getNewStartDate(char *data, int days, char **months, int monthdays[]);

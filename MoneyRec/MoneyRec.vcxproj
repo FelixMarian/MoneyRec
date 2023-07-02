@@ -127,10 +127,12 @@
     <ClInclude Include="Insertions.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AdjustDate.c" />
     <ClCompile Include="CountingEnters.c" />
     <ClCompile Include="CreateExcelFile.c" />
     <ClCompile Include="ExpensesList.c" />
     <ClCompile Include="FormatDate.c" />
+    <ClCompile Include="GenerateRaport.c" />
     <ClCompile Include="IncomesList.c" />
     <ClCompile Include="InsertExpenses.c" />
     <ClCompile Include="main.c" />

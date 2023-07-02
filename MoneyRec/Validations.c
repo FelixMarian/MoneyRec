@@ -22,3 +22,10 @@ int whatCategoryItIsIncome(int opt)
 		return 1;
 	return 0;
 }
+
+int howManyDaysUWant(int days)
+{
+	if (days == 7 || days == 14 || days == 31)
+		return 1;
+	return 0;
+}

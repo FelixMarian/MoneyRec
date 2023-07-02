@@ -6,7 +6,7 @@
 int main()
 {
 	char type[10], category[10];
-	int opt,value, optType, optCategory;
+	int opt,value, optType, optCategory, daysNumber;
 	ExcelFile();
 	while (1)
 	{
@@ -35,7 +35,7 @@ int main()
 					{
 						printf("\nCategory: ");
 						scanf("%d", &optCategory);
-						strcpy(category,chooseTheExpense(optCategory)); //Copying the category
+						strcpy(category, chooseTheExpense(optCategory)); //Copying the category
 					} while (!whatCategoryItIsExpense(optCategory));
 					InsertExpense(value, type, category);
 				}
@@ -54,6 +54,12 @@ int main()
 			} while (!whatTypeItIs(optType));
 			break;
 		case 2:
+		do
+		{
+			printf("For how many days the raport should be? (7/14/31)\nDays: ");
+			scanf("%d", &daysNumber);
+		} while (!howManyDaysUWant(daysNumber));
+		GenerateRaport(daysNumber);
 			break;
 		default:
 			printf("\n\n!!! This option doesn't exist !!!\n\n");
