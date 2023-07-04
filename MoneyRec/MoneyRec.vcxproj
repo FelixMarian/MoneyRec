@@ -133,6 +133,7 @@
     <ClCompile Include="ExpensesList.c" />
     <ClCompile Include="FormatDate.c" />
     <ClCompile Include="GenerateRaport.c" />
+    <ClCompile Include="generatingAnimation.c" />
     <ClCompile Include="IncomesList.c" />
     <ClCompile Include="InsertExpenses.c" />
     <ClCompile Include="main.c" />

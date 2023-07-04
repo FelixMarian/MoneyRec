@@ -24,4 +24,6 @@ int howManyDaysUWant(int days);
 
 
 int getDate(int Days);
-int getNewStartDate(char *data, int days, char **months, int monthdays[]);
+int getNewStartDate(char *data, int days, char *months[], int monthdays[]);
+
+void animation();

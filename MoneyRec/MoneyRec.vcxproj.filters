@@ -59,5 +59,8 @@
     <ClCompile Include="AdjustDate.c">
       <Filter>Source Files\GenerateRaport</Filter>
     </ClCompile>
+    <ClCompile Include="generatingAnimation.c">
+      <Filter>Source Files\AuxiliarFunctions</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

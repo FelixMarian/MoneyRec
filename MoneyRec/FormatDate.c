@@ -29,9 +29,9 @@ int FormatDate()
 int getDate(int Days)
 {
 	char *data = FormatDate();
-	char Months[12][20] = { "Ian", "Feb", "Mar", "Apr", "May", "Jun","Jul","Aug","Sep","Oct","Nov","Dec" };
-	int days[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
-	char aux[5];
+	char *Months[13] = { "Ian", "Feb", "Mar", "Apr", "May", "Jun","Jul","Aug","Sep","Oct","Nov","Dec" };
+	int daysInMonths[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
+	char aux[5], startDate[20];
 	int auxInt=0;
 	if (data[1] == '/') //Check if the day is 1-9 or 10+
 		strcpy(aux, data + 6);
@@ -42,18 +42,8 @@ int getDate(int Days)
 		auxInt = auxInt * 10 + (aux[i] - '0');
 	}
 	if (auxInt % 4 == 0 && auxInt % 100 != 0 || auxInt % 400 == 0) //Check if february has 28 or 29 days
-		days[2] = 29;
+		daysInMonths[1] = 29;
 	strcpy(aux, " "); //Clear the aux
 	auxInt = 0;
-	getNewStartDate(data, 2, Months, days);
-	switch (Days)
-	{
-	case 7:
-
-		break;
-	case 14:
-		break;
-	case 31:
-		break;
-	}
+	return getNewStartDate(data, Days, Months, daysInMonths);
 }
