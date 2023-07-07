@@ -62,5 +62,13 @@
     <ClCompile Include="generatingAnimation.c">
       <Filter>Source Files\AuxiliarFunctions</Filter>
     </ClCompile>
+    <ClCompile Include="DeleteFile.c">
+      <Filter>Source Files\AuxiliarFunctions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MoneyRec.py">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

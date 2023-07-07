@@ -29,3 +29,10 @@ int howManyDaysUWant(int days)
 		return 1;
 	return 0;
 }
+
+int itIsAYesOrANo(char opt[])
+{
+	if (strcmp(opt,"Y")==0 || strcmp(opt, "N") == 0)
+		return 1;
+	return 0;
+}

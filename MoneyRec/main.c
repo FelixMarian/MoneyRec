@@ -5,14 +5,16 @@
 
 int main()
 {
-	char type[10], category[10];
+	char type[10], category[10], optionDelete[5];
 	int opt,value, optType, optCategory, daysNumber;
 	ExcelFile();
+	system("python MoneyRec.py"); //Opening the Python interface
 	while (1)
 	{
 		printf("\n0. Exit\n");
 		printf("1. Insert data\n");
 		printf("2. See raport\n");
+		printf("3. Clear data\n");
 		printf("Your option: ");
 		scanf("%d", &opt);
 		switch (opt)
@@ -60,6 +62,17 @@ int main()
 			scanf("%d", &daysNumber);
 		} while (!howManyDaysUWant(daysNumber));
 		GenerateRaport(daysNumber);
+			break;
+		case 3:
+			do
+			{
+				printf("\n\nAre you absolutely sure? There is no way back (Y/N): ");
+				scanf("%s", optionDelete);
+			} while (!itIsAYesOrANo(optionDelete));
+			ExcelFileDelete();
+			printf("  \n\n                                  !!!WARNING!!!\n");
+			printf("            INSERT A RECORD FIRST (OPTION 1) BEFORE TRYING ANY OTHER OPTION      \n");
+			printf("           OTHERWISE, IT WOULD GET CORRUPTED AND YOU HAVE TO REGENERATE IT\n\n");
 			break;
 		default:
 			printf("\n\n!!! This option doesn't exist !!!\n\n");

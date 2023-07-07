@@ -257,8 +257,8 @@ void GenerateRaport(int days)
 		}
 	}
 	animation(); //Loading animation
-	printf("\n\nExpenses                              \n\n");
-	printf("Groceries: %d RON                               \n", groceries);
+	printf("\n\nExpenses                                         \n\n");
+	printf("Groceries: %d RON\n",groceries);
 	printf("Fast-Food: %d RON                                \n", fast_food);
 	printf("Entertainment: %d RON                                \n", entertainment);
 	printf("Tobacco: %d RON                                \n", tobacco);
@@ -266,7 +266,7 @@ void GenerateRaport(int days)
 	printf("Transport: %d RON                                \n", transport);
 	printf("Rent: %d RON                                \n", rent);
 	printf("Debt: %d RON                                \n", debt);
-	printf("Books: %d RON                                \n",books);
+	printf("Books: %d RON                             Total expenses: %d RON   \n",books, totalExp);
 	printf("Online memberships: %d RON                                \n",online_memberships);
 	printf("Going out: %d RON                                \n",going_out);
 	printf("Art: %d RON                                \n",art);
@@ -274,6 +274,19 @@ void GenerateRaport(int days)
 	printf("Electronics: %d RON                                \n",electronics);
 	printf("Misc: %d RON                                \n",misc);
 	printf("Gas: %d RON                                \n",gas);
-	printf("Car: %d RON                               \n\n",car);
-	printf("Total expenses: %d RON", totalExp);
+	printf("Car: %d RON                               \n",car);
+
+	printf("\n\nIncomes                                         \n\n");
+	printf("Salary: %d RON                                        \n", salary);
+	printf("Family: %d RON                                         \n",family);
+	printf("Wins: %d RON                                         \n",wins);
+	printf("Shares: %d RON                                         \n",shares);
+	printf("Crypto: %d RON                            Total incomes: %d Ron              \n",crypto, totalInc);
+	printf("Scolarship: %d RON                                      \n",scolarship);
+	printf("Loan: %d RON                                         \n",loan);
+	printf("Tips: %d RON                                         \n",tips);
+	printf("Sells: %d RON                                         \n",sells);
+
+	printf("\nTotal balance: %d", totalInc - totalExp);
+
 }

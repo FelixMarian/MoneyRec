@@ -9,6 +9,7 @@ void FormatDate();
 int whatTypeItIs(int opt);
 int whatCategoryItIsExpense(int opt);
 int whatCategoryItIsIncome(int opt);
+int itIsAYesOrANo(char opt[]);
 
 void showCategoriesExpenses();
 int chooseTheExpense(int opt);
@@ -27,3 +28,6 @@ int getDate(int Days);
 int getNewStartDate(char *data, int days, char *months[], int monthdays[]);
 
 void animation();
+
+void DeleteFile(char FileName[]);
+void ExcelFileDelete();
